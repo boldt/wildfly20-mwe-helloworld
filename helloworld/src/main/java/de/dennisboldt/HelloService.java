@@ -18,6 +18,8 @@ public class HelloService {
 		List<Data> list = new LinkedList<>();
 		list.add(new Data("value1"));
 		list.add(new Data("value2"));
+		list.add(new Data("value3"));
+		list.add(new Data("value4"));
 		return list;
 	}
 

@@ -6,6 +6,25 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+		<p>
+			<ul id="list"></ul>
+		</p>
+		<script>
+			var xhr = new XMLHttpRequest();
+			xhr.addEventListener("load", (e) => {
+				var json = JSON.parse(e.target.responseText);
+				console.log(json);
+				json.forEach(o => {
+					// https://stackoverflow.com/a/20673977/605890
+					var ul = document.getElementById("list");
+					var li = document.createElement("li");
+					li.appendChild(document.createTextNode(o.value));
+					ul.appendChild(li);
+				});
+			});
+			xhr.open("GET", "http://localhost:8080/helloworld/rest/hello/");
+			xhr.send();
+		</script>
     </body>
 </html>
 
