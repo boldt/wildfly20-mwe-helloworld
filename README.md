@@ -17,5 +17,21 @@ Open:
 * http://localhost:8080/
 * http://localhost:9990/ (`admin:admin`)
 
+## (Un)Deploy Hello World WAR
 
+```bash
+cd helloworld/
+```
+
+Deploy (`admin:admin`):
+
+```bash
+mvn install wildfly:deploy
+```
+
+Undeploy (`admin:admin`):
+
+```bash
+mvn install wildfly:undeploy
+```
 
