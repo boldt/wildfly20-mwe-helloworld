@@ -1,1 +1,7 @@
+# Maven
 helloworld/target
+
+# Ecplise
+helloworld/.classpath
+helloworld/.project
+helloworld/.settings/
