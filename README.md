@@ -32,7 +32,7 @@ mvn install wildfly:deploy
 Undeploy (`admin:admin`):
 
 ```bash
-mvn install wildfly:undeploy
+mvn wildfly:undeploy
 ```
 
 ## Use RESTful enpoint
@@ -41,6 +41,10 @@ mvn install wildfly:undeploy
 curl -H "Accept: application/json" http://localhost:8080/helloworld/rest/hello/
 curl -H "Accept: application/xml" http://localhost:8080/helloworld/rest/hello/
 ```
+
+## Open Hello World Application
+
+* http://localhost:8080/helloworld
 
 ## Ecplise
 
